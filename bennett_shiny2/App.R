@@ -28,7 +28,7 @@ ui <- fluidPage(
     "
   ),
   
-  headerPanel("Re-Measuring Gentrification", windowTitle = "Re-Measuring Gentrification"),
+  headerPanel("Gentrification Tracker", windowTitle = "Gentrification Tracker"),
   
   sidebarPanel(
     
@@ -46,7 +46,7 @@ ui <- fluidPage(
             # Output: Plot of the requested variable against mpg ----
             plotOutput("gentrificationPlot"),
     
-    p(class="plot-caption", "Data courtesy of devin michelle bunten of MIT Department of Urban Studies and Planning. For more information, see", a("here.", href =  "https://www.devinbunten.com/research#h.1vja2f82o0rp")))
+    p(class="plot-caption", "The gentrification tracker is based on the paper 'Re-Measuring Gentrification'. Income data is from the Internal Revenue Service; house price data is from Zillow. For more information, see", a("here.", href =  "https://doi.org/10.1177/00420980231173846")))
   
 )
 
